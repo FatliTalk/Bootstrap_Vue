@@ -29,7 +29,7 @@
            <div class="col-md-4 col-md-offset-4">
                <div class="panel panel-default">
                    <div class="panel-body">
-                        <div class="input-group input-group-lg">
+                        <div class="input-group">
                             <input type="text" class="form-control" placeholder="请添加新任务" autofocus v-model="newMessage">
                             <span class="input-group-btn">
                                 <button class="btn btn-default" type="button" v-on:click="addTask(newMessage);">
@@ -39,8 +39,8 @@
                         </div><!-- /input-group -->
                         <!-- 任务列表 -->
                         <div style="margin-top: 20px;">
-                            <ul class="list-group" v-for="oldTask in oldTasks">
-                                <li class="list-group-item" v-if="oldTask.show">
+                            <ul class="list-unstyled" v-for="oldTask in oldTasks">
+                                <li v-if="oldTask.show" style="padding: 5px;">
                                     <!-- checkbox -->
                                     <label>
                                         <!-- 单次点击checkbox执行s标签划掉，再点击撤销上次操作 -->
