@@ -12,7 +12,15 @@
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8（if less than IE 9） 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：如果通过 file:// 协议（直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+        <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="app">
     <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
@@ -41,15 +49,6 @@
             }
         })
     </script>
-
-    <!-- HTML5 shim 和 Respond.js 是为了让 IE8（if less than IE 9） 支持 HTML5 元素和媒体查询（media queries）功能 -->
-    <!-- 警告：如果通过 file:// 协议（直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
-    <!--[if lt IE 9]>
-        <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body id="app">
     <!-- Bootstrap 需要为页面内容和栅格系统包裹一个 container 容器 -->
     <div class="container" style="margin-top: 15%;">
        <!-- 使用单一的一组 col-md-* 栅格类，就可以创建一个基本的栅格系统，在手机和平板设备上一开始是堆叠在一起的，在桌面屏幕设备上变为水平排列。所有列column必须放在 row 内 -->
